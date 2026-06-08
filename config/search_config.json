@@ -1,0 +1,10 @@
+{
+  "studioName": "Azure Cognitive Search AI Studio",
+  "version": "1.0.0",
+  "status": "operational",
+  "environment": "staging",
+  "config": {
+    "execution": "curl -X PUT \"https://service.search.windows.net/indexes/index?api-version=2023-11-01\" -H \"Content-Type: application/json\" -d @search_config.json",
+    "validation": "az search index show --name index --service-name service"
+  }
+}
